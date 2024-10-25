@@ -48,3 +48,8 @@ or
 }
 ```
 
+NOTE: Multiple models can be tried for the given API. In this API, the `Facenet` model has been used. Available models are `VGG-Face`, `Facenet`, `OpenFace`, `DeepID`, `ArcFace`.
+The model type can be changed by simply replacing `Facenet` by another model's name in the following code snippet:
+```
+result = DeepFace.verify("user_image.jpg", "reference_image.jpg", model_name="Facenet")
+```
